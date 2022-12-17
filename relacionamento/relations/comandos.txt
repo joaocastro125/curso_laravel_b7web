@@ -1,0 +1,8 @@
+add a foreign key:php artisan make:migration 
+add_column_addressId_to_users_table --table=users
+
+$table->foreign('address_id')->references('id')->on('addresses');
+
+criando uma foreignkey :php artisan make:migration create_foreignKey_users_addresses  --table=users
+
+ $table->unsignedBigInteger('address_id')->nullable();
